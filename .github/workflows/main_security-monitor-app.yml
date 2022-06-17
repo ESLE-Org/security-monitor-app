@@ -28,7 +28,7 @@ jobs:
           yarn install --legacy-peer-deps
           yarn run lint -- --fix
           yarn run build --if-present
-          yarn run test --if-present
+          yarn run test 
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
